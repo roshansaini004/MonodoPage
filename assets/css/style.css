@@ -1,0 +1,510 @@
+/* @media url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') */
+
+
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppin;
+}
+
+a{
+    text-decoration: none;
+   
+}
+/* Hearder section start */
+header{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    /* to part of contain Start */
+    display: flex;
+    /* to part of contain end */
+     padding: 0px 125px;
+    background: #01425C;
+    justify-content: space-between;
+   
+   align-items: center;
+   
+}
+header ul li{
+   margin-right: 15px;
+    display: inline-block;
+}
+header ul li a{
+    
+    color: #fff;
+    
+    font-weight: 600;
+   }
+header ul li a.active{
+    color: #f34973;
+
+}
+/* Hearder Section End */
+/* banner section start */
+.banner{
+    width: 100%;
+    height: 650px;
+    padding: 0px 125px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/imde.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    
+}
+.banner h1{
+    padding-top: 12%;
+    font-size: 50px;
+    font-weight: normal;
+    position: absolute;
+    color: #fff;
+    
+}
+.banner h2{
+    position: absolute;
+    top: 330px;
+    color: #fff;
+    font-size: 30px;
+    
+}
+.banner form{
+    
+    width: 80%;
+    bottom: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+   position: absolute;
+   
+    background: #5C327A;
+   
+
+
+}
+.banner form button{
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    background: #8d27d5;
+    border: none;
+    font-weight: 500;
+
+}
+.banner form button.active{
+    
+    background: #f34973;
+}
+.banner form label{
+    display: none;
+}
+.banner form .serchForm {
+    margin-top: 8px;
+    /* display: grid;
+    grid-template-columns: repeat (5, 18%);
+    grid-template-rows: 15px;
+     */
+}
+.banner form .serchForm input,
+.banner form .serchForm select{
+    
+        width: 17%;
+    margin-right: 5px;
+
+    height: 35px;
+}
+.banner form button.smt{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 16px;
+    
+}
+.banner form .ttdi a{
+    color: floralwhite;
+    margin: 40px;
+}
+/* Banner section end */
+/* Fun Section Start */
+.fun{
+    width: 100%;
+    height: 300px;
+   
+    padding: 50px 125px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fun.jpg);
+    background-size: 100% 100%;
+}
+.fun h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    ;
+}
+.fun ul{
+    display: flex;
+    justify-content: space-between;
+}
+.fun ul li{
+    /* bullut remove this list style ; none */
+    list-style: none;
+    width: 130px;
+    height: 155px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+    background: #1e0c0c;
+    font-size: 50px;
+     
+}
+.fun ul li h1{
+    font-size: 20px;
+    margin: 10px;
+    
+}
+.fun ul li p{
+    font-size: 10px;
+    margin: 13px;
+}
+/* Fun Section End */
+/* TRAVEL SECTION START */
+.travel{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 90px;
+    color: #fff;
+    background: linear-gradient(rgba(123, 54, 183, 0.5),rgba(119, 45, 91, 0.5),rgba(76, 58, 145, 0.5)), url(../img/travel.jpg);
+    background-size: 100% 100%;
+}
+.travel p{
+    padding-top: 30px;
+}
+.serchTravel {
+    /* width: 100%;
+    height: 100px; */
+    margin-left: 450px;
+    padding-top: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.travel .serchTravel input   {
+    width: 40%;
+    height: 40px;
+    
+    background-color: #826F99;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+    text-emphasis-color: #fff;
+   
+   }
+   
+   .travel .serchbutton input {
+    background-color: #fff;
+  
+    width: 240%;
+    height: 40px;
+}
+
+/* TRAVEL SECTION END */
+
+/* Popular section start */
+.popular{
+    width: 100%;
+    height: auto;
+   background: #20162f;
+    color: white;
+    /* text-align: center; */
+   padding-top: 50px;
+}
+   h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 34px;
+   }
+   .popular ul {
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20%; */
+    grid-template-columns: repeat(4, 20%);
+
+    grid-template-rows: auto ;
+   
+    grid-gap: 30px 60px;
+    margin-left: 65px;
+    
+
+   }
+
+.popular ul li{
+
+
+    border: 5px solid #fff;
+    border-radius: 5px;
+    list-style: none;
+    background: #fff;
+    text-align: center;
+}
+.popular ul li img{
+    width: 98%;
+    height: 150px;
+    margin-top: 5px;
+}
+.popular ul li p,h4{
+    color: #1e0c0c;
+}
+/* Popular section end */
+
+
+/* estimate section start */
+.estimate{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    position: relative;
+    background-color: #664CAD;
+    justify-content: space-between;
+    
+}
+.estimate label{
+    display: none;
+}
+.estimate img{
+    width: 200px;
+    height: 164px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.estimate h2,h3
+{
+    text-align: left;
+    color: #fff;
+    margin: 5px;
+    
+}
+.estimate .form input,select{
+   padding: 10px 40px;
+   margin: 20px;
+
+   
+}
+/* estimate section end */
+
+/* Blog section start */
+.blog{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+
+}
+.blog h2{
+    color: #000;
+    margin-bottom: 10px;
+}
+.blog h2+p{
+    
+    text-align: center;
+    padding: 0px 200px;
+
+    
+
+}
+.blog-content{
+    display: flex;
+    margin: 10px auto;
+}
+.blog-content div{
+    padding: 3px;
+    display: flex;
+}
+.blog-content div div{
+    display: inline-block;
+}
+.blog-content div img{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+/* Blog section end */
+
+/* footer section start */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 125px;
+    background:linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7),rgba(0,0,0,0.7)), url(../img/fot.jpg);
+    background-size: 100% 100%;
+    
+  
+}
+footer .topfoot,
+footer .bottomfooter{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer ul{
+    margin-right: 120px;
+}
+footer ul li{
+    list-style: none;  
+    
+    
+}
+footer ul li a{
+    color:#918E97;
+    
+}
+footer ul li span{
+    color: #fff;
+    font-weight: 400;
+}
+footer h3{
+    color: #918E97;
+    font-size: 22px;
+    font-family: 500;
+    margin-bottom: 10px;
+}
+footer .international div{
+    display: flex;
+
+    justify-content: space-between;
+    
+}
+footer .international div .enter1{
+    margin-right: 50px;
+}
+footer .bottomfooter .footermenu ul li{
+    display: inline-block;
+    margin: 16px;   
+    
+
+}
+footer .bottomfooter{
+    margin-top: 30px;
+    
+}
+footer .bottomfooter .social ul li {
+    display: inline-block;
+    margin: 10px;    
+    
+}
+footer .bottomfooter .footermenu p{
+    margin-left: 15px;
+    color: #918E97;
+
+}
+footer .bottomfooter img{
+    border-radius: 40px;
+    /* width: 30px;
+    height: 30px; */
+}
+footer .bottomfooter .footermenu ul{
+    /* font-size: 15px; */
+    color:#fff;
+   
+}
+/* footer section srart */
+
+
+/* media Quarey section start */
+
+@media screen and(max-width:1199px){
+    header, .banner,
+    .fun, .popular,
+    .estimate,.blog,
+    footer,.travel
+
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .banner form{
+        width: 86px;
+    }
+    .banner form .serchForm input,
+.banner form .serchForm select{
+    
+        width: 17%;
+        
+}
+
+.banner form button.smt{
+    float: right !important;
+    margin-left: 0px;
+}
+}
+
+@media screen and(max-width:991px){
+    fun ul li{
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
+    }
+    .blog-content{
+        display: block;
+    }
+
+
+
+}
+@media screen and(max-width:767px)
+{
+    header, .banner,
+    .fun, .popular,
+    .estimate,.blog,
+    footer,.travel
+
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header .nav{
+        display: none;
+
+    }
+    .banner form {
+        width: auto;
+        padding: 10px;
+        justify-content: space-between;
+        right: auto;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner form .serchForm input,
+    .banner form .serchForm select{
+        display: block;
+        width: 100%;
+
+    }
+    .banner form .serchForm span{
+        display: none;
+    }
+    .banner form button .smt{
+        width: 100%;
+        height: 35px;
+        border-radius: 0px;
+        margin: 10px auto;
+
+    }
+   
+}
+@media screen and(max-width:575px)
+{
+    
+}
+
+
+
+
+
+/* Media Quarey Section end */
+
